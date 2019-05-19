@@ -1,0 +1,84 @@
+# Finding Books
+#   Search Suggestions
+#/book/get_official_tag_list
+#/bookcity/get_hot_key_list
+#/bookcity/get_search_keys key
+#   Search
+#/bookcity/get_tag_book_list tag type=0 count=10 page=0
+#/bookcity/get_filter_search_book_list key category_index=0 tags=[] order= filter_word= filter_uptime= up_status= is_paid= count=10 page=0
+#/booklist/get_search_booklist_by_listname key is_suggest count=1 page=0
+#   Booklists List
+#/bookcity/get_book_lists type count=10 page=0
+#   Related Books
+#/bookshelf/get_bookself_reommend_list
+#/bookcity/get_book_correlation_lists book_id type=3 list_num=0 count=10 page=0
+#   Bookshelf
+#/bookshelf/get_shelf_list
+#/bookshelf/get_shelf_book_list shelf_id direction=prev last_mod_time=0
+#/bookshelf/get_shelf_book_list_new shelf_id order=zonghe count=100 page=0
+#   Booklist
+#/bookcity/get_booklist_detail list_id count=10 page=0
+#   Categories
+#/bookcity/get_category_book_list category_index type=1 count=10 page=0
+
+#   Book Information
+#/book/get_info_by_id book_id
+#   Divisions
+#/book/get_division_list book_id
+#/chapter/get_updated_chapter_by_division_id division_id last_update_time=0
+#   Chapters
+#/chapter/get_chapter_permission_list book_id
+#/chapter/get_chapter_info chapter_id
+#/chapter/get_chapter_command chapter_id
+#/chapter/get_cpt_ifm chapter_id chapter_command
+
+#   Comments
+#   Book Review
+#/book/get_review_list book_id type=0 filter_type= count=10 page=0
+#/book/get_review_comment_list review_id count=10 page=0
+#/book/like_review review_id
+#/book/unlike_review review_id
+#/book/add_review_comment review_id comment_content
+#/book/add_review_comment_reply old_reader_id comment_id reply_content
+#   Chapter(Paragraph) Review
+#/chapter/get_tsukkomi_num chapter_id
+#/chapter/get_paragraph_tsukkomi_list_new chapter_id paragraph_index filter_type= count=5 page=0
+
+#   Book Tags
+#/book/get_book_tag_list book_id
+#/book/like_tag tag_id
+#/book/unlike_tag tag_id
+#/book/can_add_tag book_id
+#   Book Fans
+#/book/get_book_fans_list book_id count=10 page=0
+#/book/get_book_operate_list book_id count=10 page=0
+#   Bookmarks
+#/book/get_bookmark_list book_id count=50 page=0
+
+#   Reader
+#/reader/get_my_info reader_id=
+#/reader/get_homepage_info reader_id
+#/reader/follow reader_id
+#/reader/unfollow reader_id
+#   Reader Property
+#/reader/get_prop_info
+#/reader/get_wallet_info
+#   Information Center
+#/reader/get_unread_num
+#/reader/get_message_at_list count=10 page=0
+#/reader/get_message_comment_list count=10 page=0
+#/reader/get_message_reader_list count=20 page=0
+#/reader/get_message_sys_list count=10 page=0
+#/reader/set_is_read_at message_id
+#   Reader's Booklist
+#/booklist/get_my_booklist count=10 page=0
+#/booklist/get_favor_booklist count=10 page=0
+#/booklist/favor_booklist list_id
+#/booklist/disfavor_booklist list_id
+#   Reader's Comments
+#/reader/get_reader_bbs_list reader_id count=10 page=0
+#/reader/get_reader_review_list reader_id count=10 page=0
+#/reader/get_reader_tsukkomi_list reader_id count=10 page=0
+#   Tasks
+#/task/get_all_task_list
+#/reader/get_task_list
