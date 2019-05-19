@@ -114,5 +114,5 @@ def apiNewDefLine(apidef):
 with open('apis.txt', 'r') as fp:
   for ln in fp:
     ln = ln.replace('\n', '');
-    if len(ln) > 1 and ln[0:2] == '#/': apiNewDefLine(ln[1:]);
+    if len(ln) and ln[0] == '/': apiNewDefLine(ln);
 for ky in hbapis.keys(): hbapis[ky] = newApiClass(*hbapis[ky]);
